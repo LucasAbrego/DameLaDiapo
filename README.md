@@ -8,6 +8,7 @@ VideoToPDFConverter es una aplicación de Python diseñada para extraer diaposit
 - **Extracción de Diapositivas:** Convierte videos en presentaciones PDF extrayendo imágenes de los mismos.
 - **Selección de Rutas:** Permite seleccionar la ubicación del archivo de entrada (video) y la ruta de salida (PDF).
 - **Opción de Conservación de Imágenes:** Decide si quieres mantener las imágenes extraídas del video.
+- **Carga de múltiples videos (Solo VideoToPDFConverterV2):** Permite la conversión masiva de videos, procesándolos de manera secuencial generando un PDF y carpeta de imágenes para cada video.
 
 
 ## Requisitos
@@ -40,11 +41,20 @@ Para ejecutar esta aplicación, necesitarás tener instalados los siguientes pro
     cd "La ruta donde tengas VideoToPDFConverter"
     ```
 
-4. **Ejecuta el script** `VideoToPDFConverter.py` **para convertir videos en PDF**:
+. **Ejecuta el script** `VideoToPDFConverter.py` **para convertir videos individuales en PDF**:
 
     ```bash
     python VideoToPDFConverter.py
     ```
+
+   **O ejecuta el script** `VideoToPDFConverterV2.py` **para convertir múltiples videos de manera secuencial**:
+
+    ```bash
+    python VideoToPDFConverterV2.py
+    ```
+    
+    Ambos scripts utilizan FFmpeg e ImageMagick para extraer imágenes y crear el archivo PDF, pero `VideoToPDFConverterV2.py` añade la funcionalidad de procesar múltiples 
+ videos.
 
 ## Interfaz de Usuario
 1. Cargar Video: Usa el botón "Cargar Video" para seleccionar el archivo de video que deseas convertir.
