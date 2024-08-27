@@ -53,8 +53,7 @@ Para ejecutar esta aplicación, necesitarás tener instalados los siguientes pro
     python VideoToPDFConverterV2.py
     ```
     
-    Ambos scripts utilizan FFmpeg e ImageMagick para extraer imágenes y crear el archivo PDF, pero `VideoToPDFConverterV2.py` añade la funcionalidad de procesar múltiples 
- videos.
+Ambos scripts utilizan FFmpeg e ImageMagick para extraer imágenes y crear el archivo PDF, pero `VideoToPDFConverterV2.py` añade la funcionalidad de procesar múltiples videos.
 
 ## Interfaz de Usuario
 1. Cargar Video: Usa el botón "Cargar Video" para seleccionar el archivo de video que deseas convertir.
