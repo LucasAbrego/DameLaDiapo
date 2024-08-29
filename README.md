@@ -1,14 +1,16 @@
-# VideoToPDFConverter
+# DameLaDiapo
 
-VideoToPDFConverter es una aplicación de Python diseñada para extraer diapositivas de videos, como grabaciones de clases o presentaciones, y convertirlas en un archivo PDF de alta calidad. Esta herramienta es útil para convertir tutoriales, conferencias, y otros contenidos en formato PDF para facilitar su revisión, impresión o almacenamiento.
-
+DameLaDiapo es una aplicación diseñada para extraer diapositivas de videos, grabaciones de clases, tutoriales o conferencias. La herramienta captura automáticamente imágenes de cada diapositiva y, opcionalmente, las convierte en un archivo PDF. Ideal para cuando no tenemos acceso al archivo de la presentación original pero necesitamos tener las imágenes para estudiar, hacer resúmenes o lo sea. 
 
 ## Características
 
-- **Extracción de Diapositivas:** Convierte videos en presentaciones PDF extrayendo imágenes de los mismos.
-- **Selección de Rutas:** Permite seleccionar la ubicación del archivo de entrada (video) y la ruta de salida (PDF).
-- **Opción de Conservación de Imágenes:** Decide si quieres mantener las imágenes extraídas del video.
-- **Carga de múltiples videos (Solo VideoToPDFConverterV2):** Permite la conversión masiva de videos, procesándolos de manera secuencial generando un PDF y carpeta de imágenes para cada video.
+- **Extracción de Diapositivas:** Captura automáticamente imágenes de cada diapositiva de videos y opcionalmente las convierte en un archivo PDF.
+- **Carga de Múltiples Videos:** Permite la conversión masiva de videos, procesándolos de manera secuencial.
+- **Selección de Rutas:** Permite elegir graficamente las de entrada y salida de los archivos.
+- **Opción de Conservación de Imágenes:** Decide si deseas mantener las imágenes extraídas del video en una carpeta.
+- **Opción de Creación de PDF:** Decide si deseas crear un PDF en formato horizontal A4 con las imágenes extraídas.
+
+
 
 
 ## Requisitos
@@ -32,38 +34,34 @@ Para ejecutar esta aplicación, necesitarás tener instalados los siguientes pro
 2. **Clona el repositorio**:
 
     ```bash
-    git clone https://github.com/LucasAbrego/VideoToPDFConverter.git
+    git clone https://github.com/LucasAbrego/DameLaDiapo.git
     ```
 
 3. **Navega al directorio del proyecto**:
 
     ```bash
-    cd "La ruta donde tengas VideoToPDFConverter"
+    cd "La ruta donde tengas DameLaDiapo"
     ```
 
-. **Ejecuta el script** `VideoToPDFConverter.py` **para convertir videos individuales en PDF**:
+. **Ejecuta el script** `DameLaDiapo.py`:
 
     ```bash
-    python VideoToPDFConverter.py
+    python DameLaDiapo.py
     ```
 
-   **O ejecuta el script** `VideoToPDFConverterV2.py` **para convertir múltiples videos de manera secuencial**:
 
-    ```bash
-    python VideoToPDFConverterV2.py
-    ```
-    
-Ambos scripts utilizan FFmpeg e ImageMagick para extraer imágenes y crear el archivo PDF, pero `VideoToPDFConverterV2.py` añade la funcionalidad de procesar múltiples videos.
 
 ## Interfaz de Usuario
-1. Cargar Video: Usa el botón "Cargar Video" para seleccionar el archivo de video que deseas convertir.
-2. Seleccionar Ruta de Guardado: Usa el botón "Seleccionar Ruta de Guardado" para definir dónde se guardará el archivo PDF.
-3. Convertir a PDF: Haz clic en el botón "Convertir a PDF" para iniciar el proceso de conversión.
-
+1. **Cargar Videos:** Usa el botón "Cargar Videos" para seleccionar el archivo de video que deseas convertir.
+2. **Seleccionar Carpeta de Guardado:** Usa el botón "Seleccionar Carpeta de Guardado" para definir dónde se guardará el archivo PDF.
+3. **Conservar Imágenes:** Marca la casilla "Conservar imágenes" si deseas mantener las imágenes extraídas.
+4. **Crear PDF:** Marca la casilla "Crear PDF" si deseas generar un PDF con las imágenes extraídas.
+5. **Extraer:** Haz clic en el botón "Extraer" para iniciar el proceso de conversión.
+6. **Cancelar:** Haz clic en el botón "Cancelar" para detener el proceso de conversión.
 
 ### Créditos
-- FFmpeg: Utilizado para la extracción de imágenes de videos.
-- ImageMagick: Utilizado para la manipulación de imágenes y creación de PDFs.
+- **FFmpeg:** Utilizado para la extracción de imágenes de videos.
+- **ImageMagick:** Utilizado para la manipulación de imágenes y creación de PDFs.
 
 
 ### Licencia
