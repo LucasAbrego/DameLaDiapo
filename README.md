@@ -26,26 +26,33 @@ Para ejecutar esta aplicación, necesitarás tener instalados los siguientes pro
 
 ## Instalación y uso
 
-1. **Instala ffmpeg y ImageMagick**:
+**Instala ffmpeg y ImageMagick**:
 
-    - **ffmpeg**: [Instrucciones de instalación](https://ffmpeg.org/download.html)
-    - **ImageMagick**: [Instrucciones de instalación](https://imagemagick.org/script/download.php)
+- **ffmpeg**: [Instrucciones de instalación](https://ffmpeg.org/download.html)
+- **ImageMagick**: [Instrucciones de instalación](https://imagemagick.org/script/download.php)
      
-    Asegúrate de agregar FFmpeg e ImageMagick a tu variable de entorno `PATH` para que el script pueda encontrarlos y ejecutarlos correctamente.
-   
-2. **Clona el repositorio**:
+  Asegúrate de agregar FFmpeg e ImageMagick a tu variable de entorno `PATH` para que el script pueda encontrarlos y ejecutarlos correctamente.
+
+
+**Opción 1: Uso del Ejecutable (Solo Windows)**
+1. **Descarga el ejecutable:**
+- Ve al directorio dist del repositorio y descarga el archivo DameLaDiapo.exe.
+
+
+**Opción 2**
+1. **Clona el repositorio"**:
 
     ```bash
     git clone https://github.com/LucasAbrego/DameLaDiapo.git
     ```
 
-3. **Navega al directorio del proyecto**:
+2. **Navega al directorio del proyecto**:
 
     ```bash
     cd "La ruta donde tengas DameLaDiapo"
     ```
 
-. **Ejecuta el script** `DameLaDiapo.py`:
+3. **Ejecuta el script** `DameLaDiapo.py`:
 
     ```bash
     python DameLaDiapo.py
