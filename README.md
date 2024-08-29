@@ -2,6 +2,8 @@
 
 DameLaDiapo es una aplicación diseñada para extraer diapositivas de videos, grabaciones de clases, tutoriales o conferencias. La herramienta captura automáticamente imágenes de cada diapositiva y, opcionalmente, las convierte en un archivo PDF. Ideal para cuando no tenemos acceso al archivo de la presentación original pero necesitamos tener las imágenes para estudiar, hacer resúmenes o lo sea. 
 
+Utiliza FFmpeg para la extracción de fotogramas y ImageMagick para la manipulación y conversión de imágenes. Desarrollada en Python, la aplicación integra eficientemente estas herramientas y proporciona un entorno robusto para el procesamiento de datos. La interfaz gráfica, creada con Tkinter, ofrece una experiencia de usuario intuitiva y accesible.
+
 ## Características
 
 - **Extracción de Diapositivas:** Captura automáticamente imágenes de cada diapositiva de videos y opcionalmente las convierte en un archivo PDF.
