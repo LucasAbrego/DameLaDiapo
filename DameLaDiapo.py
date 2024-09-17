@@ -136,7 +136,7 @@ class DameLaDiapo:
             self.update_status(f"Convirtiendo {original_video_name} ({i + 1}/{len(self.video_paths)})")
 
             get_first_frame_cmd = f'ffmpeg -ss 1 -i "{video_path}" -vf "select=eq(n\\,0)" -vsync vfr "{os.path.join(image_dir, f"{sanitized_video_name}_frames_0000.png")}"'
-            get_other_frames_cmd = f'ffmpeg -i "{video_path}" -vf "select=\'gt(scene,0.05)\',showinfo" -vsync vfr "{os.path.join(image_dir, f"{sanitized_video_name}_frames_%04d.png")}"'
+            get_other_frames_cmd = f'ffmpeg -i "{video_path}" -vf "select=\'gt(scene,0.025)\',showinfo" -vsync vfr "{os.path.join(image_dir, f"{sanitized_video_name}_frames_%04d.png")}"'
             resize_frames_cmd = f'magick mogrify -resize 3226x2283 -density 300 -units PixelsPerInch "{os.path.join(image_dir, f"{sanitized_video_name}_frames_*.png")}"'
             create_pdf_cmd = f'magick convert "{os.path.join(image_dir, f"{sanitized_video_name}_frames_*.png")}" -density 300 -gravity center -background white -extent 3508x2480 -quality 100 -units PixelsPerInch "{os.path.join(output_dir, f"PDF_{sanitized_video_name}.pdf")}"'
 
